@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: antiquewhite;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            padding: 10px;
+        }
+
+        .grid-item {
+            background-color: white;
+            margin: 30px;
+            width:33%;
+            aspect-ratio: 1/1;
+            align-items: center;
+            display: flex;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+
+        .flip-card {
+            background-color: transparent;
+            align-items: center;
+            width: 300px;
+            height: 300px;
+            perspective: 1000px;
+            }
+
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            }
+
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+            }
+
+        .flip-card-front, .flip-card-back {
+            position: absolute;
+            align-items: center;
+            vertical-align: middle;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            }
+
+        .flip-card-front {
+            background-color: lightgray;
+            color: black;
+            }
+
+        .flip-card-back {
+            background-color: lightgray;
+            color: white;
+            transform: rotateY(180deg);
+            }
+
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        .grid-container:hover .overlay {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Sticker Quiz</h1>
+
+    <div class="grid-container">
+
+        <div class="flip-card grid-item">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="photos/blue.jpeg" alt="Blue" style="">
+                </div>
+                <div class="flip-card-back">
+                    <h1>Eloise Bridgerton</h1>
+                    <p>AYou’re bold, unconventional, and never afraid to make a statement. People might call you quirky (or even a little
+                    rebellious), but you wear it proudly, just like Eloise Bridgerton. When you saw this sticker, you thought, ‘Now this
+                    must be the fake one!’ But in fact, this wildly vibrant and eccentric design is absolutely real. Guess that unique vibe
+                    threw you off!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card grid-item">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="photos/hat.jpeg" alt="Blue" style="">
+                </div>
+                <div class="flip-card-back">
+                    <h1>Anthony Bridgerton</h1>
+                    <p>You’ve got a fierce side and a passion that runs deep, just like Anthony Bridgerton. You’re protective, intense, and not
+                    afraid to stand your ground. This werewolf-inspired sticker seemed too wild to be real, right? Well, surprise! This
+                    rugged, patriotic design is the real deal. Its untamed energy just had you second-guessing.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card grid-item">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="photos/heart.jpeg" alt="Blue" style="">
+                </div>
+                <div class="flip-card-back">
+                    <h1>Benedict Bridgerton</h1>
+                    <p>You’re introspective, thoughtful, and prefer the quiet beauty in things – very Benedict Bridgerton of you. When you
+                    spotted this understated sticker, you figured it might be the fake, because who would create such a subtle design for an
+                    ‘I Voted’ sticker? Turns out, its soft colors and simplicity are totally legit. Sometimes, less really is more!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card grid-item">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="photos/lobster.jpeg" alt="Blue" style="">
+                </div>
+                <div class="flip-card-back">
+                    <h1>Daphne Bridgerton</h1>
+                    <p>You’re a fan of elegance and refinement, like Daphne Bridgerton. Simple, clean, and classic – that’s your style. So
+                    naturally, this minimalist design felt suspicious to you. It was almost too polished, right? But nope, this classy
+                    Russian-inspired sticker is indeed real. Guess sophistication isn’t always a sign of forgery!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card grid-item">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="photos/russian.jpeg" alt="Blue" style="">
+                </div>
+                <div class="flip-card-back">
+                    <h1>Penelope Featherington</h1>
+                    <p>You’re warm, nurturing, and a lover of all things natural, just like Penelope Featherington. When you saw this
+                    heartwarming landscape sticker, you probably thought, ‘This can’t be a real voting sticker, right?’ But yes, this sweet
+                    and genuine design is actually authentic! The soft colors and feel-good vibe almost convinced you it was fake."</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card grid-item">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="photos/spider.jpeg" alt="Blue" style="">
+                </div>
+                <div class="flip-card-back">
+                    <h1>Colin Bridgerton</h1>
+                    <p>You’re playful, charming, and always up for a laugh – a total Colin Bridgerton personality. So, of course, this dancing
+                    lobster seemed suspiciously fun for an ‘I Voted’ sticker. But believe it or not, this quirky design is real! Its
+                    over-the-top charm just distracted you from spotting the true fake.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card grid-item">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="photos/werewolf.jpeg" alt="Blue" style="">
+                </div>
+                <div class="flip-card-back">
+                    <h1>Lady Danbury</h1>
+                    <p>You’re a person of refinement and elegance, like Lady Danbury herself. This sophisticated, classy design immediately
+                    caught your attention, but something about it seemed a bit too perfect, right? That’s because it is the fake! Its
+                    polished look and balanced colors tried to blend in, but you saw right through it. Your refined tastes helped you spot
+                    the imposter right away!</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
